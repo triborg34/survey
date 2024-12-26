@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "nazanin";
+    src: url("BNaznnBd.ttf");
+}
+
+body {
+    font-family:nazanin, Arial, sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+.survey-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.section {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    margin-left: 10px;
+}
+
+input[type="range"] {
+    width: 80%;
+    margin-right: 10px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+span {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

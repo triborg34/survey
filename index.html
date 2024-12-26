@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرم نظر سنجی مشتری</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="survey-container">
+        <h1>فرم نظر سنجی مشتریان شرکت</h1>
+        
+        <form id="surveyForm">
+            <div class="section">
+                <label for="name">نام و نام خانوادگی:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="section">
+                <label for="contact">شماره تماس:</label>
+                <input type="text" id="contact" name="contact" required>
+            </div>
+            <div class="section">
+                <label for="company">سازمان/شرکت:</label>
+                <input type="text" id="company" name="company">
+            </div>
+            <div class="section">
+                <label for="serviceType">نوع خدمات دریافتی:</label>
+                <select id="serviceType" name="serviceType">
+                    <option value="camera">دوربین مدار بسته</option>
+                    <option value="switch">سوییچ شبکه</option>
+                    <option value="storage">دستگاه ذخیره‌سازی</option>
+                    <option value="all">ترکیبی</option>
+                </select>
+            </div>
+
+            <h3>لطفا کیفیت خدمات را ارزیابی کنید:</h3>
+            <div class="rating-section">
+                <label for="qualityCamera">کیفیت دوربین‌های مدار بسته:</label>
+                <div class="slider-container">
+                    <span id="qualityCameraValue">3</span>
+                    <input type="range" id="qualityCamera" name="qualityCamera" min="1" max="5" value="3">
+                </div>
+            </div>
+            <div class="rating-section">
+                <label for="qualitySwitch">کیفیت سوییچ‌های شبکه:</label>
+                <div class="slider-container">
+                    <span id="qualitySwitchValue">3</span>
+                    <input type="range" id="qualitySwitch" name="qualitySwitch" min="1" max="5" value="3">
+                </div>
+            </div>
+            <div class="rating-section">
+                <label for="performanceStorage">عملکرد دستگاه ذخیره‌سازی:</label>
+                <div class="slider-container">
+                    <span id="performanceStorageValue">3</span>
+                    <input type="range" id="performanceStorage" name="performanceStorage" min="1" max="5" value="3">
+                </div>
+            </div>
+            <div class="rating-section">
+                <label for="usability">آسانی استفاده از محصولات:</label>
+                <div class="slider-container">
+                    <span id="usabilityValue">3</span>
+                    <input type="range" id="usability" name="usability" min="1" max="5" value="3">
+                </div>
+            </div>
+            <div class="rating-section">
+                <label for="price">مناسب بودن قیمت محصولات:</label>
+                <div class="slider-container">
+                    <span id="priceValue">3</span>
+                    <input type="range" id="price" name="price" min="1" max="5" value="3">
+                </div>
+            </div>
+
+            <h3>پرسش‌های عمومی:</h3>
+            <div class="section">
+                <label for="installationSatisfaction">آیا از نحوه نصب و راه‌اندازی راضی بودید؟</label>
+                <input type="radio" id="yesInstallation" name="installationSatisfaction" value="yes"> بله
+                <input type="radio" id="noInstallation" name="installationSatisfaction" value="no"> خیر
+            </div>
+            <div class="section">
+                <label for="improvementSuggestions">آیا پیشنهاد یا انتقادی برای بهبود خدمات یا محصولات دارید؟</label>
+                <textarea id="improvementSuggestions" name="improvementSuggestions"></textarea>
+            </div>
+            <div class="section">
+                <label for="futureCollaboration">آیا تمایل به همکاری مجدد با شرکت دارید؟</label>
+                <input type="radio" id="yesCollaboration" name="futureCollaboration" value="yes"> بله
+                <input type="radio" id="noCollaboration" name="futureCollaboration" value="no"> خیر
+            </div>
+
+            <div class="section">
+                <label for="additionalServices">در صورت نیاز به خدمات اضافی، چه امکاناتی می‌خواهید اضافه شود؟</label>
+                <textarea id="additionalServices" name="additionalServices"></textarea>
+            </div>
+
+            <div class="section">
+                <label for="overallSatisfaction">نمره کلی رضایت از خدمات و محصولات:</label>
+                <div class="slider-container">
+                    <span id="overallSatisfactionValue">3</span>
+                    <input type="range" id="overallSatisfaction" name="overallSatisfaction" min="1" max="5" value="3">
+                </div>
+            </div>
+
+            <div class="section">
+                <label for="recommendation">آیا به دیگران این خدمات را توصیه می‌کنید؟</label>
+                <input type="radio" id="yesRecommendation" name="recommendation" value="yes"> بله
+                <input type="radio" id="noRecommendation" name="recommendation" value="no"> خیر
+            </div>
+
+            <button type="submit">ارسال فرم</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
