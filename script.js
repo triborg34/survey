@@ -18,7 +18,7 @@ updateSliderValue('price', 'priceValue');
 updateSliderValue('overallSatisfaction', 'overallSatisfactionValue');
 
 // Function to handle form submission
-document.getElementById('surveyForm').addEventListener('submit', function(e) {
+document.getElementById('surveyForm').addEventListener('submit', async function(e) {
     e.preventDefault();  // Prevent the form from submitting the traditional way
 
     const formData = {
@@ -40,7 +40,8 @@ document.getElementById('surveyForm').addEventListener('submit', function(e) {
     };
 
     console.log(JSON.stringify(formData, null, 2));  // Log the form data as JSON
-    postReq(formData)
+   await postReq(formData)
+   alert("با تشکر از نظر شما ثبت شد")
     
 });
 
