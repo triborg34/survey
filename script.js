@@ -40,4 +40,24 @@ document.getElementById('surveyForm').addEventListener('submit', function(e) {
     };
 
     console.log(JSON.stringify(formData, null, 2));  // Log the form data as JSON
+    postReq(formData)
+    
 });
+
+
+function postReq(data){
+    let url="https://sheetdb.io/api/v1/4d34sevutizvt"
+    fetch(url, {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            data
+        })
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data));
+
+}
